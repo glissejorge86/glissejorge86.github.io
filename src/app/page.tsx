@@ -1,9 +1,9 @@
 import { Hero } from "@/components/Hero";
-import { Speakers } from "@/components/Speakers";
-import { Collage } from "@/components/Collage";
+//import { Speakers } from "@/components/Speakers";
+//import { Collage } from "@/components/Collage";
 // import { Volunteer } from "@/components/Volunteer";
-import { Organizer } from "@/components/Organizer";
-import { Sponsors } from "@/components/Sponsors";
+//import { Organizer } from "@/components/Organizer";
+//import { Sponsors } from "@/components/Sponsors";
 // import { Agenda } from "@/components/Agenda";
 // import { Site } from "@/components/Site";
 

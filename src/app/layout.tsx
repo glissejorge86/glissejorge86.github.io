@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Open_Sans, Playfair_Display } from "next/font/google";
 import "@/styles/globals.css";
-import { Header } from "@/components/Header";
+// import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 
 const openSans = Open_Sans({
