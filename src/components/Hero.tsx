@@ -34,7 +34,7 @@ export function Hero() {
 
           {/* Subtítulo */}
           <p className="mt-6 text-2xl tracking-tight text-slate-700 font-medium">
-            International Women&apos;s Day Ayacucho 2026 rumbo al <strong className="text-blue-600">WTM Global Conference</strong>
+            Día Internacional de la Mujer, Ayacucho 2026
           </p>
 
           {/* Información del evento */}
