@@ -60,12 +60,12 @@ export function Timer() {
     return (
         <section className="flex items-center justify-center text-center px-5 py-10 bg-white">
             <div className="max-w-3xl">
-                <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-blue-700">
+                {/* <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-blue-700">
                     ¡Separa tu cupo antes que se agoten!
                 </h2>
                 <p className="text-lg text-gray-700 mb-8">
                     Las entradas se están agotando rápidamente, ¡no te quedes sin la tuya! Asegura tu lugar antes de que sea demasiado tarde.
-                </p>
+                </p> */}
                 
                 <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 justify-center">
                     {[

@@ -53,7 +53,7 @@ export function Hero() {
           <Timer />
 
           {/* Botones: registro y sponsors (alineados horizontalmente) */}
-          <div className="flex flex-col sm:flex-row items-center justify-center mt-10 gap-6">
+          {/* <div className="flex flex-col sm:flex-row items-center justify-center mt-10 gap-6">
             <Button 
               href="https://forms.gle/cf6kCuWJjGyxXoW47" 
               className="group relative inline-flex items-center gap-2 px-8 py-4 text-lg font-semibold text-white bg-gradient-to-r from-blue-600 to-cyan-500 rounded-full hover:from-blue-700 hover:to-cyan-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all transform hover:scale-105 shadow-lg hover:shadow-xl" 
@@ -79,7 +79,7 @@ export function Hero() {
               <span className="group-hover:translate-x-1 transition-transform">→</span>
             </Button>
           
-          </div>
+          </div> */}
 
           {/* Mensaje motivacional */}
           <div className="mt-8 max-w-2xl mx-auto">

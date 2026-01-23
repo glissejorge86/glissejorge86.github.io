@@ -39,7 +39,7 @@ export default function RootLayout({
       <body
         className={`${openSans.variable} ${playfairDisplay.variable} antialiased`}
       >
-        <Header />
+        {/* <Header /> */}
         {children}
         <Footer />
       </body>
