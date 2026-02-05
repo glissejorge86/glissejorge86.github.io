@@ -3,7 +3,6 @@
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
 import Image from 'next/image'
-import logoImage from '@/images/Logo_break_the_pattern.png' 
 
 export function Hero() {
   return (
@@ -24,7 +23,7 @@ export function Hero() {
             {/* Left: Logo image */}
             <div className="flex justify-center lg:justify-start">
               <Image
-                src={logoImage}
+                src="/images/Logo_break_the_pattern.png"
                 alt="Break the Pattern"
                 width={520}
                 className="w-full max-w-[360px] sm:max-w-[420px] lg:max-w-[520px] h-auto"

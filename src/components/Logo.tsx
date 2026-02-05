@@ -1,8 +1,6 @@
 import Image from 'next/image'
 import clsx from 'clsx'
 
-import logoImage from '@/images/Logo_break_the_pattern.png'
-
 export function Logo({
   className,
   position = 'left',
@@ -24,7 +22,7 @@ export function Logo({
           position === 'right' &&
             'left-full',
         )}
-        src={logoImage}
+        src="/images/Logo_break_the_pattern.png"
         alt="Break the Pattern logo"
         width={600}
         style={{ height: 'auto' }}
