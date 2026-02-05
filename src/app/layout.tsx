@@ -40,8 +40,10 @@ export default function RootLayout({
         className={`${openSans.variable} ${playfairDisplay.variable} antialiased`}
       >
         {/* <Header /> */}
-        {children}
-        <Footer />
+        <div suppressHydrationWarning>
+          {children}
+          <Footer />
+        </div>
       </body>
     </html>
   );
