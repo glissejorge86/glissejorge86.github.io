@@ -11,6 +11,15 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        wtm: {
+          light: '#4fc3f7',
+          blue: '#0076cf',
+          deep: '#0334ab',
+          mint: '#1ce9b6',
+          teal: '#00bfa5',
+          dark: '#202124',
+          white: '#ffffff',
+        },
       },
     },
   },

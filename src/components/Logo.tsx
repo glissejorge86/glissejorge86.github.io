@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import clsx from 'clsx'
 
-import logoImage from '@/images/logo.png'
+import logoImage from '@/images/Logo_break_the_pattern.png'
 
 export function Logo({
   className,
@@ -25,7 +25,7 @@ export function Logo({
             'left-full',
         )}
         src={logoImage}
-        alt="https://www.technovation.org/women-techmakers/"
+        alt="Break the Pattern logo"
         width={600}
         style={{ height: 'auto' }}
         priority
