@@ -79,7 +79,15 @@ export function Footer() {
             Empoderando mujeres en tecnología 💙
           </p>
           <p className="text-xs text-slate-500">
-            Parte de la comunidad global de Women Techmakers
+            Parte de la comunidad global de Women Techmakers de{" "}
+            <a 
+              href="https://www.technovation.org/women-techmakers/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-blue-600 hover:text-cyan-500 font-semibold transition-colors underline"
+            >
+              Technovation
+            </a>
           </p>
         </div>
 

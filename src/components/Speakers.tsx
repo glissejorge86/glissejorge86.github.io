@@ -1,4 +1,5 @@
 import { Container } from "./Container";
+import { Button } from "./Button";
 
 export function Speakers() {
   return (
@@ -8,10 +9,10 @@ export function Speakers() {
           {/* Header */}
           <div className="text-center mb-12">
             <h2 className="font-display text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-500 mb-4">
-              Speakers
+              Ponente
             </h2>
             <p className="text-2xl text-slate-700">
-              Conviértete en speaker del International Women&apos;s Day 2026
+              Conviértete en ponente del IWD Ayacucho 2026
             </p>
           </div>
 
@@ -79,17 +80,17 @@ export function Speakers() {
                 </div>
 
                 {/* CTA Button */}
-                <a
+                <Button
                   href="https://forms.gle/vYgQxyvjjgq7HxkYA"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-blue-600 to-cyan-500 text-white font-semibold rounded-full hover:from-blue-700 hover:to-cyan-600 transition-all transform hover:scale-105 shadow-lg hover:shadow-xl"
                 >
-                  <span>¡Postula como Speaker!</span>
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <span>¡Postula como Ponente!</span>
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden>
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                   </svg>
-                </a>
+                </Button>
               </div>
             </div>
 
@@ -123,7 +124,7 @@ export function Speakers() {
             {/* Additional info */}
             <div className="mt-8 text-center">
               <p className="text-sm text-slate-500">
-                📅 Fecha límite para postular: <span className="font-semibold text-slate-700">15 de Febrero, 2026</span>
+                Fecha límite para postular: <span className="font-semibold text-slate-700">20 de Febrero, 2026</span>
               </p>
             </div>
           </div>

@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
-import { Open_Sans, Playfair_Display } from "next/font/google";
+import { Inter, Playfair_Display } from "next/font/google";
 import "@/styles/globals.css";
 // import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 
-const openSans = Open_Sans({
+const inter = Inter({
   display: "swap",
   subsets: ["latin"],
-  weight: ["400", "500", "700"],
-  variable: "--font-open-sans",
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-inter",
 });
 
 const playfairDisplay = Playfair_Display({
@@ -32,12 +32,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="es">
+    <html suppressHydrationWarning lang="es">
       <head>
         <link rel="icon" href="/logo.ico" sizes="any" />
       </head>
       <body
-        className={`${openSans.variable} ${playfairDisplay.variable} antialiased`}
+        suppressHydrationWarning
+        className={`${inter.variable} ${playfairDisplay.variable} antialiased`}
       >
         {/* <Header /> */}
         <div suppressHydrationWarning>

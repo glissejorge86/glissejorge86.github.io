@@ -1,132 +1,111 @@
-"use client";
-
 import { Button } from '@/components/Button'
-import { Container } from '@/components/Container'
 import Image from 'next/image'
 
 export function Hero() {
   return (
-    <section id="hero" className="relative py-5 sm:py-10 min-h-screen flex items-center bg-[var(--background)]">
-      {/* Imágenes decorativas a los lados */}
-    
-      <div className="absolute right-0 top-0 hidden lg:flex items-center translate-y-8 opacity-80">
-        <Image src="/izquierda.png" alt="Decoración derecha" width={225} height={780}  /> 
-      </div>
+    <section id="hero" suppressHydrationWarning className="relative py-8 sm:py-12 lg:py-20 min-h-screen flex items-center w-full" style={{ backgroundColor: '#0334ab', width: '100%' }}>
+      {/* Decorative blobs with improved positioning */}
+      <div className="absolute -top-10 sm:-top-20 left-1/4 w-48 sm:w-96 h-48 sm:h-96 rounded-full mix-blend-screen filter blur-3xl opacity-20 sm:opacity-25 animate-blob bg-wtm-light"></div>
+      <div className="absolute top-20 sm:top-40 right-1/4 w-48 sm:w-96 h-48 sm:h-96 rounded-full mix-blend-screen filter blur-3xl opacity-20 sm:opacity-25 animate-blob animation-delay-2000 bg-wtm-mint"></div>
+      <div className="hidden sm:block absolute -bottom-32 left-1/2 w-96 h-96 rounded-full mix-blend-screen filter blur-3xl opacity-20 animate-blob animation-delay-4000 bg-wtm-light"></div>
 
-      {/* Elementos decorativos adicionales con colores WTM */}
-      <div className="absolute top-20 left-1/4 w-72 h-72 rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-blob bg-wtm-light"></div>
-      <div className="absolute top-40 right-1/4 w-72 h-72 rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-blob animation-delay-2000 bg-wtm-mint"></div>
-      
-      <Container className="mx-auto relative z-10">
-        <div className="lg:px-12">
-          <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-8">
+      <div className="w-full relative z-10">
+        <div className="px-3 sm:px-6 lg:px-8 xl:px-12 2xl:px-16">
+          <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-6 sm:gap-12 lg:gap-16">
             {/* Left: Logo image */}
             <div className="flex justify-center lg:justify-start">
               <Image
                 src="/images/Logo_break_the_pattern.png"
                 alt="Break the Pattern"
-                width={520}
-                className="w-full max-w-[360px] sm:max-w-[420px] lg:max-w-[520px] h-auto"
+                width={1040}
+                height={560}
+                sizes="100vw"
+                className="w-full h-auto transition-all duration-300"
                 priority
                 unoptimized
               />
             </div>
 
             {/* Right: content */}
-            <div className="text-left">
+            <div className="text-left lg:text-left space-y-5 sm:space-y-8">
               <h1 className="sr-only">Break the Pattern</h1>
 
-              {/* Subtítulo */}
-              <p className="mt-0 text-xl sm:text-2xl lg:text-3xl tracking-tight font-medium" style={{ color: 'var(--color-deep-blue)' }}>
-                IWD Ayacucho 2026
-              </p>
+              {/* Main title */}
+              <div className="space-y-2 sm:space-y-3">
+                <p className="text-xs sm:text-base font-semibold tracking-widest uppercase letter-spacing-wide text-wtm-light">
+                  Día Internacional de la Mujer
+                </p>
+                <h2 className="text-xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold leading-tight text-white">
+                  IWD Ayacucho 2026
+                </h2>
+                <p className="text-sm sm:text-lg text-gray-200 font-medium">
+                  Break the Pattern: Mujeres Liderando el Cambio
+                </p>
+              </div>
 
-              {/* Información del evento */}
-              <div className="mt-6 flex flex-wrap gap-4 text-slate-600">
-                <div className="flex items-center gap-2 bg-white/80 px-4 py-2 rounded-full shadow-sm border border-[rgba(0,0,0,0.04)]">
-                  <span className="text-xl">📅</span>
-                  <span className="font-medium">Sábado 7 de Marzo, 2026</span>
+              {/* Event details with improved styling */}
+              <div className="flex flex-col sm:flex-row flex-wrap gap-4 sm:gap-6 pt-2 sm:pt-6 justify-center sm:justify-start">
+                <div className="flex items-center gap-3 sm:gap-4">
+                  <div className="flex flex-col">
+                    <span className="text-xs font-semibold tracking-widest uppercase text-wtm-light/80">Fecha</span>
+                    <span className="text-sm sm:text-base font-semibold text-white">7 de Marzo, 2026</span>
+                  </div>
+                  <div className="hidden sm:block w-px h-12 bg-white/20"></div>
                 </div>
-                <div className="flex items-center gap-2 bg-white/80 px-4 py-2 rounded-full shadow-sm border border-[rgba(0,0,0,0.04)]">
-                  <span className="text-xl">⏰</span>
-                  <span className="font-medium">8:30 AM</span>
+                <div className="flex items-center gap-3 sm:gap-4">
+                  <div className="flex flex-col">
+                    <span className="text-xs font-semibold tracking-widest uppercase text-wtm-light/80">Hora</span>
+                    <span className="text-sm sm:text-base font-semibold text-white">8:30 AM</span>
+                  </div>
+                  <div className="hidden sm:block w-px h-12 bg-white/20"></div>
+                </div>
+                <div className="flex items-center gap-3 sm:gap-4">
+                  <div className="flex flex-col">
+                    <span className="text-xs font-semibold tracking-widest uppercase text-wtm-light/80">Lugar</span>
+                    <span className="text-sm sm:text-base font-semibold text-white">Centro Cultural UNSCH</span>
+                  </div>
                 </div>
               </div>
 
-
-              {/* Botones: registro y sponsors (alineados a la izquierda en desktop) */}
-              <div className="flex flex-col sm:flex-row flex-wrap items-center sm:items-start justify-center sm:justify-start mt-6 gap-4 w-full">
+              {/* CTA Buttons */}
+              <div className="flex flex-col sm:flex-row sm:flex-nowrap gap-2 sm:gap-3 pt-4 sm:pt-6 justify-center sm:justify-start">
                 <Button 
                   href="https://forms.gle/cf6kCuWJjGyxXoW47" 
-                  className="group relative inline-flex w-full sm:w-auto justify-center items-center gap-2 px-6 sm:px-8 py-3 text-base sm:text-lg font-semibold text-white rounded-full focus:outline-none focus:ring-2 focus:ring-wtm-deep focus:ring-offset-2 transition-all transform hover:scale-105 shadow-lg hover:shadow-xl bg-wtm-deep" 
+                  className="group relative inline-flex flex-1 sm:flex-initial w-full sm:w-auto justify-center items-center gap-2 px-4 sm:px-8 py-2.5 sm:py-4 text-xs sm:text-sm lg:text-base font-semibold text-white rounded-full focus:outline-none focus:ring-2 focus:ring-wtm-deep focus:ring-offset-2 transition-all transform hover:scale-105 shadow-lg hover:shadow-2xl bg-gradient-to-r from-wtm-deep to-wtm-blue" 
                   target="_blank"
                 >
-                  <span>Inscríbete</span>
+                  <span>Quiero Asistir</span>
                   <span className="group-hover:translate-x-1 transition-transform">→</span>
                 </Button>
 
-                {/* <Button 
+                <Button 
                   href="#sponsors" 
-                  className="group relative inline-flex w-full sm:w-auto justify-center items-center gap-2 px-6 sm:px-8 py-3 text-base sm:text-lg font-semibold text-white rounded-full focus:outline-none focus:ring-2 focus:ring-wtm-blue focus:ring-offset-2 transition-all transform hover:scale-105 shadow-lg hover:shadow-xl bg-gradient-to-r from-wtm-blue to-wtm-teal"
+                  className="group relative inline-flex flex-1 sm:flex-initial w-full sm:w-auto justify-center items-center gap-2 px-4 sm:px-8 py-2.5 sm:py-4 text-xs sm:text-sm lg:text-base font-semibold text-white rounded-full focus:outline-none focus:ring-2 focus:ring-wtm-light focus:ring-offset-2 transition-all transform hover:scale-105 shadow-lg hover:shadow-2xl bg-gradient-to-r from-wtm-light to-wtm-teal border border-white/20" 
                 >
-                  <span>Quiero ser sponsor</span>
-                  <span className="group-hover:translate-x-1 transition-transform">→</span>
-                </Button> */}
-              
-                {/* <Button 
-                  href="#speakers" 
-                  className="group relative inline-flex w-full sm:w-auto justify-center items-center gap-2 px-6 sm:px-8 py-3 text-base sm:text-lg font-semibold text-white rounded-full focus:outline-none focus:ring-2 focus:ring-wtm-blue focus:ring-offset-2 transition-all transform hover:scale-105 shadow-lg hover:shadow-xl bg-gradient-to-r from-wtm-blue to-wtm-teal"
-                >
-                  <span>Quiero ser speaker</span>
+                  <span>Quiero patrocinar</span>
                   <span className="group-hover:translate-x-1 transition-transform">→</span>
                 </Button>
-               */}
+
+                <Button 
+                  href="#speakers" 
+                  className="group relative inline-flex flex-1 sm:flex-initial w-full sm:w-auto justify-center items-center gap-2 px-4 sm:px-8 py-2.5 sm:py-4 text-xs sm:text-sm lg:text-base font-semibold text-white rounded-full focus:outline-none focus:ring-2 focus:ring-wtm-light focus:ring-offset-2 transition-all transform hover:scale-105 shadow-lg hover:shadow-2xl bg-gradient-to-r from-wtm-light to-wtm-teal border border-white/20" 
+                >
+                  <span>Quiero ser ponente</span>
+                  <span className="group-hover:translate-x-1 transition-transform">→</span>
+                </Button>
               </div>
 
-              {/* {/* Mensaje motivacional */}
-               {/* <div className="mt-8 max-w-2xl">
-                <div className="rounded-2xl p-6 shadow-sm bg-gradient-to-r from-[rgba(79,195,247,0.06)] to-[rgba(0,191,165,0.06)] border-l-4 border-wtm-blue">
-                  <p className="text-left italic text-wtm-dark">
-                    &quot;Es momento de romper patrones, ocupar espacios donde no nos esperaban y reescribir las reglas del futuro tech.&quot;
-                  </p>
-                </div>
-              </div>*/}
-
-              {/* Flecha de scroll (alineada a la izquierda en desktop) */}
-               {/* <div className="mt-8">
-                <Link href="#speakers" legacyBehavior>
-                  <a className="inline-flex items-center justify-center w-14 h-14 text-white rounded-full focus:outline-none focus:ring-2 focus:ring-wtm-blue focus:ring-offset-2 transition-all transform hover:scale-105 shadow-lg hover:shadow-xl animate-bounce bg-gradient-to-r from-wtm-blue to-wtm-teal">
-                    <FaArrowDown className="w-6 h-6" />
-                  </a>
-                </Link>
-              </div> */}
             </div>
           </div>
         </div>
-      </Container>
+      </div>
 
-      <style jsx>{`
-        @keyframes blob {
-          0% {
-            transform: translate(0px, 0px) scale(1);
-          }
-          33% {
-            transform: translate(30px, -50px) scale(1.1);
-          }
-          66% {
-            transform: translate(-20px, 20px) scale(0.9);
-          }
-          100% {
-            transform: translate(0px, 0px) scale(1);
-          }
-        }
-        .animate-blob {
-          animation: blob 7s infinite;
-        }
-        .animation-delay-2000 {
-          animation-delay: 2s;
-        }
-      `}</style>
+      {/* Scroll indicator arrow */}
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+        <svg className="w-6 h-6 text-white opacity-70" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+        </svg>
+      </div>
     </section>
   )
 }

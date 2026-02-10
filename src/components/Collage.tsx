@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from 'react';
+import { Button } from "./Button";
 
 const Container = ({ children }: { children: React.ReactNode }) => (
   <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">{children}</div>
@@ -98,15 +99,14 @@ export function Collage() {
           <div className="text-center mb-12">
             <div className="inline-block mb-4">
               <span className="bg-gradient-to-r from-blue-600 to-cyan-500 text-white text-sm font-bold px-5 py-2 rounded-full shadow-lg">
-                ✨ IWD Ayacucho 2025 - Éxito Comprobado
+                ✨ IWD Ayacucho 2025
               </span>
             </div>
             <h2 className="font-display text-4xl sm:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-cyan-500 to-blue-600 mb-4 animate-gradient">
-              El Impacto que Creamos Juntos
+              Redefine Possible: El Impacto que Creamos Juntos
             </h2>
             <p className="text-xl text-slate-700 max-w-3xl mx-auto leading-relaxed">
-              Más que un evento: una comunidad que está cambiando el futuro tech de Ayacucho. 
-              <span className="block mt-2 font-semibold text-blue-600">Tu marca puede ser parte de esta transformación en 2026.</span>
+              <span className="block mt-2 font-semibold text-blue-600">Más que un evento: una comunidad de tecnología que valora y conmemora el Día Internacional de la Mujer. </span>
             </p>
           </div>
 
@@ -244,67 +244,21 @@ export function Collage() {
                 <div className="text-5xl mb-4">📸</div>
                 <h3 className="text-2xl font-bold mb-2">Galería 2025</h3>
                 <p className="text-sm mb-4 opacity-90">Ver fotos del evento</p>
-                <div 
-                  className="inline-flex items-center gap-2 bg-white text-blue-600 px-4 py-2 rounded-full font-semibold text-sm hover:bg-blue-50 transition-colors"
-                  onClick={() => window.open('https://photos.app.goo.gl/qp148rKrwZpJHJ3Z8', '_blank')}
-                >
-                  <span>Explorar</span>
-                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Social Proof Section */}
-          <div className="bg-white/80 backdrop-blur-sm rounded-3xl shadow-2xl p-8 border-2 border-cyan-100">
-            <div className="grid md:grid-cols-3 gap-8 items-center">
-              {/* Testimonial */}
-              <div className="md:col-span-2">
-                <div className="flex items-start gap-4">
-                  <div className="flex-shrink-0">
-                    <div className="w-16 h-16 bg-gradient-to-br from-blue-100 to-cyan-100 rounded-full flex items-center justify-center">
-                      <span className="text-3xl">💼</span>
-                    </div>
-                  </div>
-                  <div className="flex-1">
-                    <div className="flex gap-1 mb-2">
-                      {[1,2,3,4,5].map(star => (
-                        <svg key={star} className="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                        </svg>
-                      ))}
-                    </div>
-                    <p className="text-lg text-slate-700 italic mb-3 leading-relaxed">
-                      &ldquo;El IWD 2025 superó nuestras expectativas. La organización fue impecable y pudimos conectar con talento tech que realmente marca la diferencia.&rdquo;
-                    </p>
-                    <p className="text-blue-600 font-semibold text-sm">
-                      — Sponsor IWD 2025, Empresa Tech Local
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              {/* CTA */}
-              <div className="text-center md:text-right">
-                <h4 className="text-xl font-bold text-slate-800 mb-3">
-                  ¿Tu marca en IWD 2026?
-                </h4>
-                <a
-                  href="https://wa.link/vqkjny"
+                <Button
+                  href="https://photos.app.goo.gl/qp148rKrwZpJHJ3Z8"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 to-cyan-500 text-white font-bold px-6 py-3 rounded-full hover:from-blue-700 hover:to-cyan-600 transition-all transform hover:scale-105 shadow-lg"
+                  className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-blue-600 to-cyan-500 text-white font-semibold rounded-full hover:from-blue-700 hover:to-cyan-600 transition-all transform hover:scale-105 shadow-lg hover:shadow-xl"
                 >
-                  <span>Ser Sponsor 2026</span>
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <span>Explorar</span>
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden>
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                   </svg>
-                </a>
+                </Button>
               </div>
             </div>
           </div>
+
         </div>
       </Container>
 
@@ -344,34 +298,13 @@ export function Collage() {
                 )}
                 <h3 className="text-3xl font-bold text-slate-800 mb-2">{photos[selectedImage].title}</h3>
                 <p className="text-lg text-slate-600 mb-4">{photos[selectedImage].description}</p>
-                {/* <div className="text-sm text-slate-500 p-4 bg-slate-50 rounded-lg">
-                  <p className="font-semibold mb-2">📁 Ruta de imagen configurada:</p>
-                  <code className="bg-slate-200 px-3 py-1 rounded">
-                    {photos[selectedImage].image}
-                  </code>
-                  {imageErrors[photos[selectedImage].id] && (
-                    <p className="mt-2 text-red-500">⚠️ La imagen no se pudo cargar. Verifica la ruta.</p>
-                  )}
-                </div> */}
               </div>
             </div>
           </div>
         </div>
       )}
 
-      <style jsx>{`
-        @keyframes gradient {
-          0%, 100% { background-position: 0% 50%; }
-          50% { background-position: 100% 50%; }
-        }
-        .animate-gradient {
-          background-size: 200% auto;
-          animation: gradient 3s ease infinite;
-        }
-        .delay-1000 {
-          animation-delay: 1s;
-        }
-      `}</style>
+      {/* Animations moved to global CSS (src/styles/globals.css) */}
     </section>
   );
 }
