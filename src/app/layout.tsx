@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Playfair_Display } from "next/font/google";
 import "@/styles/globals.css";
-// import { Header } from "@/components/Header";
+import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 
 const inter = Inter({
@@ -40,7 +40,7 @@ export default function RootLayout({
         suppressHydrationWarning
         className={`${inter.variable} ${playfairDisplay.variable} antialiased`}
       >
-        {/* <Header /> */}
+        <Header />
         <div suppressHydrationWarning>
           {children}
           <Footer />
