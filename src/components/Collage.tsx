@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from 'react';
+import Image from 'next/image';
 import { Button } from "./Button";
 
 const Container = ({ children }: { children: React.ReactNode }) => (
@@ -136,10 +137,13 @@ export function Collage() {
               <div className="relative h-full min-h-[400px]">
                 {/* Imagen REAL */}
                 {!imageErrors[1] ? (
-                  <img 
+                  <Image 
                     src={photos[0].image}
                     alt={photos[0].title}
-                    className="absolute inset-0 w-full h-full object-cover"
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                    priority
                     onError={() => handleImageError(1)}
                   />
                 ) : (
@@ -176,10 +180,12 @@ export function Collage() {
                 <div className="relative h-full min-h-[195px]">
                   {/* Imagen REAL */}
                   {!imageErrors[photos[idx].id] ? (
-                    <img 
+                    <Image 
                       src={photos[idx].image}
                       alt={photos[idx].title}
-                      className="absolute inset-0 w-full h-full object-cover"
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 768px) 100vw, 50vw"
                       onError={() => handleImageError(photos[idx].id)}
                     />
                   ) : (
@@ -212,10 +218,12 @@ export function Collage() {
                 <div className="relative h-full min-h-[195px]">
                   {/* Imagen REAL */}
                   {!imageErrors[photos[idx].id] ? (
-                    <img 
+                    <Image 
                       src={photos[idx].image}
                       alt={photos[idx].title}
-                      className="absolute inset-0 w-full h-full object-cover"
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 768px) 100vw, 33vw"
                       onError={() => handleImageError(photos[idx].id)}
                     />
                   ) : (
@@ -284,11 +292,13 @@ export function Collage() {
               <div className="text-center">
                 {/* Imagen en el modal */}
                 {!imageErrors[photos[selectedImage].id] ? (
-                  <div className="mb-6">
-                    <img 
+                  <div className="mb-6 relative w-full h-[400px]">
+                    <Image 
                       src={photos[selectedImage].image}
                       alt={photos[selectedImage].title}
-                      className="w-full h-auto max-h-[400px] object-cover rounded-2xl"
+                      fill
+                      className="object-cover rounded-2xl"
+                      sizes="(max-width: 1200px) 100vw, 1200px"
                     />
                   </div>
                 ) : (
