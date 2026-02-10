@@ -1,7 +1,6 @@
 "use client";
 import { Container } from "@/components/Container";
 import { useState } from "react";
-import Image from "next/image";
 
 export function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
