@@ -20,12 +20,10 @@ export function Sponsors() {
             <div className="absolute top-0 right-0 w-40 h-40 bg-gradient-to-br from-blue-400 to-cyan-400 rounded-full blur-3xl opacity-20"></div>
             
             <div className="flex flex-col gap-6 relative text-center">
-              <h3 className="font-display text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-500 mb-4">
+              <h2 className="font-display text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-500 mb-4">
               Patrocinadores
-              </h3>
-              <p className="text-2xl text-slate-700">
-              Sé parte del IWD Ayacucho 2026 y conecta con talento
-              </p>
+              </h2>
+              
               {/* Logos de patrocinadores */}
               <div className="flex flex-wrap justify-center items-center gap-8 py-6">
                 <div className="bg-white rounded-lg p-4 shadow-md hover:shadow-xl transition-shadow">
@@ -36,6 +34,9 @@ export function Sponsors() {
                   />
                 </div>
               </div>
+              <p className="text-2xl text-slate-700">
+              Sé parte del IWD Ayacucho 2026 y conecta con talento
+              </p>
                <p className="text-base sm:text-lg text-slate-600 leading-relaxed">
                ¿Quieres patrocinar nuestro evento?, te presentamos el plan de patrocinio para que puedas elegir el que mejor se adapte a tu empresa.
               </p>
