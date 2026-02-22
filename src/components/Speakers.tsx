@@ -47,7 +47,7 @@ export function Speakers() {
                   Convocatoria cerrada
                 </h3>
                 <p className="text-base sm:text-lg text-slate-600 mb-5 sm:mb-6 leading-relaxed">
-                  Gracias por el interés en participar como ponente. Muy pronto compartiremos novedades sobre próximas convocatorias.
+                  Gracias por el interés en participar como ponente. Estamos evaluando las propuestas recibidas y pronto anunciaremos los resultados.
                 </p>
 
                 {/* CTA Button */}
