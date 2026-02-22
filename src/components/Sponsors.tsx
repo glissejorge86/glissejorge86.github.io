@@ -20,20 +20,28 @@ export function Sponsors() {
             <div className="absolute top-0 right-0 w-40 h-40 bg-gradient-to-br from-blue-400 to-cyan-400 rounded-full blur-3xl opacity-20"></div>
             
             <div className="flex flex-col gap-6 relative text-center">
-              <h2 className="font-display text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-500 mb-4">
-              Patrocinadores
+              <h2 className="font-display text-2xl sm:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-500 mb-4">
+              Colaboradores
               </h2>
               
               {/* Logos de patrocinadores */}
-              <div className="flex flex-wrap justify-center items-center gap-8 py-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 py-6 max-w-3xl mx-auto items-center">
                 <div className="bg-white rounded-lg p-4 shadow-md hover:shadow-xl transition-shadow">
                   <img 
                     src="/images/13.png" 
                     alt="Incuba UNSCH" 
-                    className="h-40 w-auto object-contain grayscale hover:grayscale-0 transition-all"
+                    className="h-40 w-auto mx-auto object-contain grayscale hover:grayscale-0 transition-all"
+                  />
+                </div>
+                <div className="bg-white rounded-lg p-4 shadow-md hover:shadow-xl transition-shadow">
+                  <img 
+                    src="/images/16.png" 
+                    alt="Lexovate" 
+                    className="h-40 w-auto mx-auto object-contain grayscale hover:grayscale-0 transition-all"
                   />
                 </div>
               </div>
+              
               <p className="text-2xl text-slate-700">
               Sé parte del IWD Ayacucho 2026 y conecta con talento
               </p>

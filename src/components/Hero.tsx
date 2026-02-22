@@ -85,14 +85,7 @@ export function Hero() {
                   <span>Quiero patrocinar</span>
                   <span className="group-hover:translate-x-1 transition-transform">→</span>
                 </Button>
-
-                <Button 
-                  href="#speakers" 
-                  className="group relative inline-flex flex-1 sm:flex-initial w-full sm:w-auto justify-center items-center gap-2 px-4 sm:px-8 py-2.5 sm:py-4 text-xs sm:text-sm lg:text-base font-semibold text-white rounded-full focus:outline-none focus:ring-2 focus:ring-wtm-light focus:ring-offset-2 transition-all transform hover:scale-105 shadow-lg hover:shadow-2xl bg-gradient-to-r from-wtm-light to-wtm-teal border border-white/20" 
-                >
-                  <span>Quiero ser ponente</span>
-                  <span className="group-hover:translate-x-1 transition-transform">→</span>
-                </Button>
+                
               </div>
 
             </div>
@@ -104,7 +97,7 @@ export function Hero() {
       <a
         href="#sponsors"
         aria-label="Ir hacia abajo"
-        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce"
+        className="hidden md:block absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce"
       >
         <svg className="w-6 h-6 text-white opacity-70" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
