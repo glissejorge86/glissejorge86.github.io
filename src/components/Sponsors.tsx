@@ -25,7 +25,7 @@ export function Sponsors() {
               </h2>
               
               {/* Logos de patrocinadores */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 py-6 max-w-3xl mx-auto items-center">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 py-6 max-w-4xl mx-auto items-center">
                 <a
                   href="https://oficinas.unsch.edu.pe/vri/incubadora/"
                   target="_blank"
@@ -55,6 +55,25 @@ export function Sponsors() {
                   <img 
                     src="/images/16.png" 
                     alt="Lexovate" 
+                    className="h-40 w-auto mx-auto object-contain grayscale hover:grayscale-0 transition-all"
+                  />
+                  <span className="mt-3 inline-flex items-center gap-1 text-sm font-semibold text-blue-600">
+                    Ir a la página web
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden>
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                    </svg>
+                  </span>
+                </a>
+                <a
+                  href="https://www.linkedin.com/company/se-colectiva/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Visitar web de SeColectiva"
+                  className="bg-white rounded-lg p-4 shadow-md hover:shadow-xl transition-shadow"
+                >
+                  <img
+                    src="/images/17.png"
+                    alt="SeColectiva"
                     className="h-40 w-auto mx-auto object-contain grayscale hover:grayscale-0 transition-all"
                   />
                   <span className="mt-3 inline-flex items-center gap-1 text-sm font-semibold text-blue-600">
