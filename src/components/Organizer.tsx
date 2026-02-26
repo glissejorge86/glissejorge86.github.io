@@ -14,6 +14,12 @@ const organizers: Organizer[] = [
     role: "Backend Java Software Engineer",
     image: "/images/7.png",
     linkedin: "https://www.linkedin.com/in/glisse-jorge/",
+  },
+  {
+    name: "Sihomara Ochoa",
+    role: "Organizadora",
+    image: "/images/12.png",
+    linkedin: "https://www.linkedin.com",
   }
 ];
 
@@ -25,14 +31,14 @@ export function Organizer() {
       <div className="hidden sm:block absolute -bottom-32 left-1/2 w-96 h-96 rounded-full filter blur-3xl opacity-20 bg-wtm-light"></div>
 
       <Container>
-        <div className="relative z-10 mx-auto max-w-5xl">
+        <div className="relative z-10 max-w-5xl mx-auto">
           <div className="text-center mb-8 sm:mb-12">
             <h2 className="font-display text-3xl sm:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-500 mb-3 sm:mb-4">
-              Organizadora
+              Organizadoras
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 gap-4 sm:gap-6 max-w-md mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 max-w-4xl mx-auto">
             {organizers.map((organizer, index) => (
               <OrganizerCard key={`${organizer.linkedin}-${index}`} organizer={organizer} />
             ))}

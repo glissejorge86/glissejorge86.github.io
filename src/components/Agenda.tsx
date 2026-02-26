@@ -87,11 +87,11 @@ export function Agenda() {
     ];
 
     return (
-        <section id="agenda" className="py-10" style={{ backgroundColor: "#0334ab" }}>
+        <section id="agenda" className="py-10 bg-white">
             <Container>
                 <div className="text-center">
-                    <h2 className="text-4xl font-bold text-white">Agenda del 07 de marzo</h2>
-                    <p className="text-lg text-gray-200">IWD AYACUCHO 2026</p>
+                    <h2 className="text-4xl font-bold text-blue-700">Agenda del 07 de marzo</h2>
+                    <p className="text-lg text-gray-600">IWD AYACUCHO 2026</p>
                 </div>
 
                 <div className="mt-8 space-y-6">

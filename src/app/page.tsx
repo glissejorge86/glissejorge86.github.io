@@ -5,6 +5,7 @@ import { Sponsors } from "@/components/Sponsors";
 import { Collage } from "@/components/Collage";
 import { Agenda } from "@/components/Agenda";
 import { Site } from "@/components/Site";
+import { Volunteer } from "@/components/Volunteer";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <Sponsors />
       <Speakers />
       <Organizer />
+      <Volunteer />
       <Agenda />
       <Site />
       <Collage />

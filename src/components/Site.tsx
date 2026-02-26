@@ -6,30 +6,31 @@ export function Site() {
         <section
             id="site"
             aria-labelledby="sponsors-title"
-            className="py-5 sm:py-10 bg-white"
+            className="py-5 sm:py-10"
+            style={{ backgroundColor: "#0334ab" }}
         >
             <Container>
                 <div className="mx-auto max-w-6xl text-center">
                     <h2
                         id="sponsors-title"
-                        className="font-display text-5xl font-medium tracking-tighter text-blue-500 sm:text-5xl"
+                        className="font-display text-5xl font-medium tracking-tighter text-wtm-light sm:text-5xl"
                     >
                         ¿Cómo llegar?
                     </h2>
                     {/* Mapa de Google Maps */}
                     <br />
                     <div className="flex flex-col items-center justify-center text-center">
-                        <h3 className="text-2xl font-semibold text-gray-900 mb-4">
+                        <h3 className="text-2xl font-semibold text-white mb-4">
                             📍 Ubicación del Evento
                         </h3>
                         <div className="max-w-3xl">
-                            <h2 className="text-1xl sm:text-4xl md:text-4xl font-bold mb-6 text-blue-700">
+                            <h2 className="text-1xl sm:text-4xl md:text-4xl font-bold mb-6 text-white">
                                  Centro Cultural de la Universidad Nacional de San Cristóbal de Huamanga 
                             </h2>
-                            <h2 className="text-1xl sm:text-4xl md:text-4xl font-bold mb-6 text-blue-700">
+                            <h2 className="text-1xl sm:text-4xl md:text-4xl font-bold mb-6 text-white">
                                  (C.C. UNSCH)
                             </h2>
-                            <p className="text-lg text-gray-700 mb-8">
+                            <p className="text-lg text-blue-100 mb-8">
                                 Dirección: Portal Unión N° 37, Plaza Mayor
                             </p>
                             <div className="w-full max-w-10xl h-[500px] rounded-lg overflow-hidden shadow-lg">
