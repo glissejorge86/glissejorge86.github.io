@@ -34,7 +34,7 @@ const speakers = [
   },
   {
     name: "Nefi Arroyo",
-    cargo: "Tech Owner, AWS Availability",
+    cargo: "Líder de Comunidades Tech",
     photo: "/images/speaker_6.png",
     linkedin: "https://www.linkedin.com/in/nefiarroyo/",
   },
