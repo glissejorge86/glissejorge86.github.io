@@ -4,85 +4,94 @@ import Image from "next/image";
 export function Agenda() {
     const schedule = [
         {
-            time: "8:30 AM - 9:00 AM",
+            time: "08:00 AM - 08:15 AM",
             title: "Registro y Networking",
-            description: "",
+            category: "Networking",
             speakers: null,
         },
         {
-            time: "9:00 AM - 9:15 AM",
-            title: "Bienvenida e Inauguración al IWD Ayacucho 2025",
-            description: "",
+            time: "08:15 AM - 08:30 AM",
+            title: "Bienvenida e Inauguración al IWD Ayacucho 2026",
+            category: "Apertura",
             speakers: [
-                { name: "Glisse Jorge", image: "/images/7.png" },
-                { name: "Sihomara Ochoa", image: "/images/12.png" }
+                { name: "Glisse Jorge", image: "/images/7.png", role: "Moderadora" }
             ],
         },
         {
-            time: "9:15 AM - 10:00 AM",
-            title: "IA Generativa y Modelos de Lenguaje: Hacia una Inteligencia Artificial con Identidad Nacional",
-            description: "",
-            speakers: [{ name: "Luis Solis", image: "/images/6.png" }],
+            time: "08:30 AM - 09:05 AM",
+            title: "How to be fluent in English",
+            category: "Empoderamiento",
+            speakers: [{ name: "Heber Munaylla", image: "/images/speaker_2.jpg", role: "Ponente" }],
         },
         {
-            time: "10:00 AM - 10:15 AM",
-            title: "Charlas Ignite",
-            description: "",
-            speakers: [
-                { name: "Yovany Romero", image: "/images/11.png" },
-                { name: "Glisse Jorge", image: "/images/7.png" },
-                { name: "Sihomara Ochoa", image: "/images/12.png" }
-            ],
+            time: "09:05 AM - 09:40 AM",
+            title: "El Arte del Prompting: Estructurando Portafolios Profesionales en Gemini",
+            category: "Inteligencia Artificial",
+            speakers: [{ name: "Lesly Samaritano", image: "/images/speaker_1.jpeg", role: "Ponente" }],
             
         },
         {
-            time: "10:15 AM - 10:25 AM",
-            title: "Break",
-            description: "",
+            time: "09:40 AM - 10:15 AM",
+            title: "Innovar para Emprender: Mujeres Construyendo el Futuro Digital",
+            category: "Emprendimiento",
+            speakers: [{ name: "Aldo Vega", image: "/images/speaker_4.png", role: "Ponente" }],
+        },
+        {
+            time: "10:15 AM - 10:30 AM",
+            title: "Break y Rondas de Preguntas",
+            category: "Networking",
             speakers: null,
         },
         {
-            time: "10:25 AM - 11:10 AM",
-            title: "Hecho es mejor que perfecto",
-            description: "",
-            speakers: [{ name: "Shirley Sosa", image: "/images/10.png" }],
+            time: "10:30 AM - 10:45 AM",
+            title: "Charla Relámpago: Alexa",
+            category: "Inteligencia Artificial",
+            speakers: [{ name: "Nefi Arroyo", image: "/images/speaker_6.png", role: "Ponente" }],
         },
         {
-            time: "11:10 AM - 11:25 AM",
-            title: "Mujeres en las Startups",
-            description: "",
-            speakers: [{ name: "Andrea Guillén", image: "/images/5.png" }],
+            time: "10:45 AM - 11:20 AM",
+            title: "Atrévete a empezar en la nube",
+            category: "Cloud",
+            speakers: [{ name: "Alanis González", image: "/images/speaker_5.jpeg", role: "Ponente" }],
         },
         {
-            time: "11:35 AM - 12:20 PM",
-            title: "IA en el Frontend: Cómo integrar modelos de Machine Learning en aplicaciones web",
-            description: "",
-            speakers: [{ name: "Yovany Romero", image: "/images/11.png" }],
+            time: "11:20 AM - 11:55 AM",
+            title: "Agile en entornos tecnológicos complejos: Del framework a la entrega de valor real",
+            category: "Agilidad",
+            speakers: [{ name: "Alicia Acevedo", image: "/images/speaker_3.jpeg", role: "Ponente" }],
         },
         {
-            time: "12:20 PM - 12:50 PM",
-            title: "Round Table: Mujeres que inspiran",
-            description: "",
-            speakers: [
-                { name: "Elinar Carrillo", image: "/images/9.png" },
-                { name: "Yovany Romero", image: "/images/11.png" },
-                { name: "Shirley Sosa", image: "/images/10.png" }
-            ],
+            time: "11:55 AM - 12:10 PM",
+            title: "Break y Rondas de Preguntas",
+            category: "Networking",
+            speakers: null,
+        },{
+            time: "12:10 PM - 12:45 PM",
+            title: "Códigos de Éxito: Claves para generar conexión corporativa",
+            category: "Habilidades blandas",
+            speakers: [{ name: "Mar García", image: "/images/speaker_7.jpg", role: "Ponente" }],
         },
         {
-            time: "12:50 PM - 1:00 PM",
+            time: "12:45 PM - 01:20 PM",
+            title: "AWS para Todos: La Clave para Hackear tu Futuro",
+            category: "Cloud",
+            speakers: [{ name: "Nefi Arroyo", image: "/images/speaker_6.png", role: "Ponente" }],
+        },
+        {
+            time: "01:20 PM - 01:30 PM",
             title: "Cierre",
+            category: "Clausura",
             description: "",
             speakers: null,
         }
     ];
 
     return (
-        <section id="agenda" className="py-10 bg-gray-100">
+        <section id="agenda" className="py-10" style={{ backgroundColor: "#0334ab" }}>
             <Container>
                 <div className="text-center">
-                    <h2 className="text-4xl font-bold text-blue-600">Agenda del 15 de marzo</h2>
-                    <p className="text-lg text-gray-700">Women Techmakers Ayacucho</p>
+                    <h2 className="text-4xl font-bold text-white">Agenda del 07 de marzo</h2>
+                    <p className="text-lg text-gray-200">IWD AYACUCHO 2026</p>
                 </div>
 
                 <div className="mt-8 space-y-6">
@@ -101,6 +110,9 @@ export function Agenda() {
                                 {/* Columna 2: Detalles */}
                                 <div>
                                     <h3 className="text-xl font-bold text-gray-900">{item.title}</h3>
+                                    <span className="inline-block mt-2 px-3 py-1 rounded-full bg-blue-100 text-blue-700 text-xs font-semibold">
+                                        {item.category}
+                                    </span>
                                     {item.description && (
                                         <p className="text-gray-600">{item.description}</p>
                                     )}
@@ -120,7 +132,7 @@ export function Agenda() {
                                                 />
                                                 <div>
                                                     <p className="text-sm font-semibold text-gray-800">{speaker.name}</p>
-                                                    <p className="text-xs text-gray-500">Ponente</p>
+                                                    <p className="text-xs text-gray-500">{speaker.role}</p>
                                                 </div>
                                             </div>
                                         ))}

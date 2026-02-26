@@ -60,7 +60,7 @@ export function Speakers() {
               Speakers
             </h2>
             <p className="text-lg sm:text-2xl text-gray-200 px-2 sm:px-0">
-              Conoce a nuestros speakers inspiradoras que liderarán el cambio en el Día Internacional de la Mujer 2026.
+              Conoce a nuestros speakers que liderarán el cambio en el Día Internacional de la Mujer 2026.
             </p>
           </div>
 

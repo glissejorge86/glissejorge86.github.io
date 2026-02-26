@@ -74,18 +74,9 @@ export function Hero() {
                   className="group relative inline-flex flex-1 sm:flex-initial w-full sm:w-auto justify-center items-center gap-2 px-4 sm:px-8 py-2.5 sm:py-4 text-xs sm:text-sm lg:text-base font-semibold text-white rounded-full focus:outline-none focus:ring-2 focus:ring-wtm-deep focus:ring-offset-2 transition-all transform hover:scale-105 shadow-lg hover:shadow-2xl bg-gradient-to-r from-wtm-deep to-wtm-blue" 
                   target="_blank"
                 >
-                  <span>Quiero asistir</span>
+                  <span>Inscribirme</span>
                   <span className="group-hover:translate-x-1 transition-transform">→</span>
                 </Button>
-
-                <Button 
-                  href="#sponsors" 
-                  className="group relative inline-flex flex-1 sm:flex-initial w-full sm:w-auto justify-center items-center gap-2 px-4 sm:px-8 py-2.5 sm:py-4 text-xs sm:text-sm lg:text-base font-semibold text-white rounded-full focus:outline-none focus:ring-2 focus:ring-wtm-light focus:ring-offset-2 transition-all transform hover:scale-105 shadow-lg hover:shadow-2xl bg-gradient-to-r from-wtm-light to-wtm-teal border border-white/20" 
-                >
-                  <span>Quiero patrocinar</span>
-                  <span className="group-hover:translate-x-1 transition-transform">→</span>
-                </Button>
-                
               </div>
 
             </div>

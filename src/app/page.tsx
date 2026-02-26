@@ -1,11 +1,10 @@
 import { Hero } from "@/components/Hero";
 import { Speakers } from "@/components/Speakers";
-// import { Volunteer } from "@/components/Volunteer";
-//import { Organizer } from "@/components/Organizer";
+import { Organizer } from "@/components/Organizer";
 import { Sponsors } from "@/components/Sponsors";
 import { Collage } from "@/components/Collage";
-// import { Agenda } from "@/components/Agenda";
-// import { Site } from "@/components/Site";
+import { Agenda } from "@/components/Agenda";
+import { Site } from "@/components/Site";
 
 export default function Home() {
   return (
@@ -13,12 +12,10 @@ export default function Home() {
       <Hero />
       <Sponsors />
       <Speakers />
+      <Organizer />
+      <Agenda />
+      <Site />
       <Collage />
-      {/* <Volunteer /> */}
-      {/* <Organizer /> */}
-      {/* <Agenda /> */}
-      
-      {/* <Site /> */}
     </div>
   );
 }

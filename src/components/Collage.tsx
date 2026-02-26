@@ -87,7 +87,7 @@ export function Collage() {
   };
 
   return (
-    <section className="py-16 sm:py-20 bg-gradient-to-b from-white via-blue-50 to-cyan-50 relative overflow-hidden">
+    <section className="py-16 sm:py-20 relative overflow-hidden" style={{ backgroundColor: "#0334ab" }}>
       {/* Background decorative */}
       <div className="absolute top-0 left-0 w-full h-full opacity-30 pointer-events-none">
         <div className="absolute top-20 left-10 w-96 h-96 bg-blue-300 rounded-full mix-blend-multiply filter blur-3xl animate-pulse"></div>
@@ -103,11 +103,11 @@ export function Collage() {
                 ✨ IWD Ayacucho 2025
               </span>
             </div>
-            <h2 className="font-display text-4xl sm:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-cyan-500 to-blue-600 mb-4 animate-gradient">
+            <h2 className="font-display text-4xl sm:text-5xl font-bold text-white mb-4">
               Redefine Possible: El Impacto que Creamos Juntos
             </h2>
             <p className="text-xl text-slate-700 max-w-3xl mx-auto leading-relaxed">
-              <span className="block mt-2 font-semibold text-blue-600">Más que un evento: una comunidad de tecnología que valora y conmemora el Día Internacional de la Mujer. </span>
+              <span className="block mt-2 font-semibold text-white">Más que un evento: una comunidad de tecnología que valora y conmemora el Día Internacional de la Mujer.</span>
             </p>
           </div>
 

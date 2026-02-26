@@ -37,18 +37,18 @@ export function Header() {
               Ponentes
             </a>
             <a 
+              href="#agenda" 
+              className="py-3 px-4 text-blue-600 hover:text-cyan-500 hover:bg-blue-50 rounded-lg transition-all font-medium"
+              onClick={() => setMenuOpen(false)}
+            >
+              Agenda
+            </a>
+            <a 
               href="#sponsors" 
               className="py-3 px-4 text-blue-600 hover:text-cyan-500 hover:bg-blue-50 rounded-lg transition-all font-medium"
               onClick={() => setMenuOpen(false)}
             >
-              Patrocinadores
-            </a>
-            <a 
-              href="#collage" 
-              className="py-3 px-4 text-blue-600 hover:text-cyan-500 hover:bg-blue-50 rounded-lg transition-all font-medium"
-              onClick={() => setMenuOpen(false)}
-            >
-              IWD Ayacucho 2025
+              Colaboradores
             </a>
           </div>
         </nav>
