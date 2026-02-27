@@ -17,7 +17,7 @@ const organizers: Organizer[] = [
   },
   {
     name: "Sihomara Ochoa",
-    role: "Organizadora",
+    role: "Mid Senior Frontend Developer",
     image: "/images/12.png",
     linkedin: "https://www.linkedin.com",
   }
