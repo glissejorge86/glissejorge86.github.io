@@ -99,7 +99,7 @@ export function Agenda() {
                         <div 
                             key={index} 
                             className={`rounded-lg shadow-md p-6 
-                            ${item.title === "Break" || item.title === "Cierre" || item.title === "Registro y Networking" ? "bg-blue-200" : "bg-white"}`}
+                            ${item.title === "Break y Rondas de Preguntas" || item.title === "Cierre" || item.title === "Registro y Networking" ? "bg-blue-200" : "bg-white"}`}
                         >
                             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 items-center">
                                 {/* Columna 1: Hora */}
