@@ -25,16 +25,19 @@ export function Agenda() {
         },
         {
             time: "09:05 AM - 09:40 AM",
-            title: "El Arte del Prompting: Estructurando Portafolios Profesionales en Gemini",
-            category: "Inteligencia Artificial",
-            speakers: [{ name: "Lesly Samaritano", image: "/images/speaker_1.jpeg", role: "Ponente" }],
-            
-        },
-        {
-            time: "09:40 AM - 10:15 AM",
             title: "Innovar para Emprender: Mujeres Construyendo el Futuro Digital",
             category: "Emprendimiento",
             speakers: [{ name: "Aldo Vega", image: "/images/speaker_4.png", role: "Ponente" }],
+        },
+        {
+            time: "09:40 AM - 10:15 AM",
+            title: "El Arte del Prompting: Estructurando Portafolios Profesionales en Gemini",
+            category: "Inteligencia Artificial",
+            speakers: [{ name: "Lesly Samaritano", image: "/images/speaker_1.jpeg", role: "Ponente" }],
+
+
+
+
         },
         {
             time: "10:15 AM - 10:30 AM",
