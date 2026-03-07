@@ -84,27 +84,6 @@ export function Sponsors() {
                   </span>
                 </a>
               </div>
-              
-              <p className="text-2xl text-slate-700">
-              Sé parte del IWD Ayacucho 2026 y conecta con talento
-              </p>
-               <p className="text-base sm:text-lg text-slate-600 leading-relaxed">
-               ¿Quieres patrocinar nuestro evento?, te presentamos el plan de patrocinio para que puedas elegir el que mejor se adapte a tu empresa.
-              </p>
-              <div className="flex justify-center">
-                <Button
-                    href="https://www.canva.com/design/DAHA5fqNt-M/wEQpRkWNZWORc838SMoKsw/view"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 px-6 py-2 bg-gradient-to-r from-blue-600 to-cyan-500 text-white font-semibold rounded-full hover:from-blue-700 hover:to-cyan-600 transition-all transform hover:scale-105 shadow-lg hover:shadow-xl"
-                  >
-                    <span>Quiero patrocinar</span>
-                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden>
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                    </svg>
-                  </Button>
-              </div>
-              
             </div>
           </div>
 
